@@ -1,0 +1,44 @@
+Problem 1
+Endpoint /tour/matches returns all the matches for a given tour name.
+The endpoint latency increases linearly with the number of tours. Modify the endpoint to increase the performance.
+
+Solution 1
+-> Added indexing for tour name of tours table in migration/base.sql
+-> Modified query for fetching match details
+-> PR : https://github.com/Ankit-521/fancode_assignment/pull/1
+
+Problem 2
+Modify the endpoint /sport/tour/match to also return match's id, startTime and format
+
+Solution 2
+-> Modfied the query to fetch match id, start time and format
+-> processed in controller to get dictionary of match name, match id, start time and format for each match 
+-> PR : https://github.com/Ankit-521/fancode_assignment/pull/2
+
+Problem 3
+Requirement: News Support for Matches and Tours
+Functional Requirements:
+    1. News can be created for a match or a tour.
+    2. Each news created for a match also belongs to the corresponding tour.
+    3. Each news created for a tour also belongs to the corresponding sport.
+Technical Requirements:
+    1. Create an endpoint to create news.
+    2. Create an endpoint to fetch news by match id
+    3. Create an endpoint to fetch news by tour id
+    4. Create an endpoint to fetch news by sport id
+News Model
+{
+    title: string,
+    description: string
+}
+
+
+Solution 3
+    1. Created news table to store news data ( title and description)
+    2. news table has additional columns (id, match id, tour id, sport id and createdAt)
+    3. Created post method endpoint /news to create news with either matchId or tourId and store it news table
+    4. /news endpoint post request takes json body with required parameters of title, description and (matchId or tourId)
+    4. Created endpoint /news/match to get match detail by matchId
+    5. Created endpoint /news/tour to get match detail by tourId
+    6. Created endpoint /news/sport to get match detail by sportId
+  PR: https://github.com/Ankit-521/fancode_assignment/pull/3

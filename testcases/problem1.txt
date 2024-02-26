@@ -1,0 +1,7 @@
+Input 1:
+
+curl -X GET http://localhost:3000/tour/matches?name=Indian%20Premier%20League,%202023
+
+Output 1:
+
+[{"id":1,"name":"GT vs RCB","tourId":1,"status":1,"format":"T20","startTime":"2023-04-09T18:00:00.000Z","endTime":"2023-04-09T23:00:00.000Z","recUpdatedAt":"2024-02-26T13:59:36.000Z","createdAt":"2024-02-26T13:59:36.000Z"},{"id":2,"name":"CSK vs MI","tourId":1,"status":1,"format":"T20","startTime":"2023-04-10T18:00:00.000Z","endTime":"2021-04-10T23:00:00.000Z","recUpdatedAt":"2024-02-26T13:59:36.000Z","createdAt":"2024-02-26T13:59:36.000Z"},{"id":3,"name":"LSG vs KXIP","tourId":1,"status":1,"format":"T20","startTime":"2023-04-11T18:00:00.000Z","endTime":"2023-04-11T23:00:00.000Z","recUpdatedAt":"2024-02-26T13:59:36.000Z","createdAt":"2024-02-26T13:59:36.000Z"},{"id":4,"name":"RR vs SRH","tourId":1,"status":1,"format":"T20","startTime":"2023-04-12T18:00:00.000Z","endTime":"2023-04-12T23:00:00.000Z","recUpdatedAt":"2024-02-26T13:59:36.000Z","createdAt":"2024-02-26T13:59:36.000Z"}]

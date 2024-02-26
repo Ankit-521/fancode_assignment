@@ -1,0 +1,57 @@
+Input 1:
+
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{
+        "title": "News Title for tour 2",
+        "description": "News Description is something for tour 2",
+        "tourId": 1 
+      }' \
+  http://localhost:3000/news
+
+Output 1:
+
+{"message":"News created successfully"}
+
+Input2:
+
+  curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{
+        "title": "News Title",  
+        "description": "News Description is something",  
+        "matchId": 1
+      }' \
+  http://localhost:3000/news
+
+Output 2:
+
+{"message":"News created successfully"}
+
+Input 3:
+
+curl -X GET http://localhost:3000/news/sport?sportId=1
+
+Output 3:
+
+[{"id":1,"title":"News Title for tour 2","description":"News Description is something for tour 2","createdAt":"2024-02-26T14:01:18.000Z","matchId":null,"tourId":1,"sportId":1}]
+
+Input 4:
+
+curl -X GET http://localhost:3000/news/tour?tourId=1
+
+Output 4: 
+
+[{"id":1,"title":"News Title for tour 2","description":"News Description is something for tour 2","createdAt":"2024-02-26T14:01:18.000Z","matchId":null,"tourId":1,"sportId":1},{"id":2,"title":"News Title","description":"News Description is something","createdAt":"2024-02-26T14:02:48.000Z","matchId":1,"tourId":1,"sportId":null}]
+
+Input 5:
+
+curl -X GET http://localhost:3000/news/match?matchId=1
+
+Output 5:
+
+[{"id":2,"title":"News Title","description":"News Description is something","createdAt":"2024-02-26T14:02:48.000Z","matchId":1,"tourId":1,"sportId":null}]
+
+
+
+

@@ -1,0 +1,7 @@
+Input 1:
+
+curl -X GET http://localhost:3000/sport/tour/match
+
+Output 1:
+
+{"Cricket":{"Indian Premier League, 2023":[{"matchName":"GT vs RCB","matchId":1,"matchStartTime":"2023-04-09T18:00:00.000Z","matchFormat":"T20"},{"matchName":"CSK vs MI","matchId":2,"matchStartTime":"2023-04-10T18:00:00.000Z","matchFormat":"T20"},{"matchName":"LSG vs KXIP","matchId":3,"matchStartTime":"2023-04-11T18:00:00.000Z","matchFormat":"T20"},{"matchName":"RR vs SRH","matchId":4,"matchStartTime":"2023-04-12T18:00:00.000Z","matchFormat":"T20"}],"India Tour of West Indies, 2023":[{"matchName":"IND vs WI","matchId":8,"matchStartTime":"2023-06-10T10:00:00.000Z","matchFormat":"ODI"},{"matchName":"IND vs WI","matchId":9,"matchStartTime":"2023-06-12T10:00:00.000Z","matchFormat":"ODI"},{"matchName":"IND vs WI","matchId":10,"matchStartTime":"2023-06-14T10:00:00.000Z","matchFormat":"ODI"}]},"Football":{"India Super League, 2023":[{"matchName":"BLR vs BEN","matchId":5,"matchStartTime":"2023-04-29T18:00:00.000Z","matchFormat":"soccer"},{"matchName":"ATK vs MCFC","matchId":6,"matchStartTime":"2023-04-21T18:00:00.000Z","matchFormat":"soccer"},{"matchName":"KER vs JFC","matchId":7,"matchStartTime":"2023-04-22T18:00:00.000Z","matchFormat":"soccer"}],"English Premier League, 2022":[{"matchName":"KER vs JFC","matchId":11,"matchStartTime":"2022-04-09T18:00:00.000Z","matchFormat":"soccer"}]}}
